@@ -15,17 +15,9 @@ $this->title = 'My Yii Application';
                     <div class="div-table-cell div-table-header">Содержимое</div>
                 </div>
                 <div class="div-table-row">
-                    <div class="div-table-cell theme-cell">
-                        <div class="active">Тема 1</div>
-                        <div>Тема 2</div>
-                        <div>Тема 3</div>
-                    </div>
-                    <div class="div-table-cell subtheme-cell">
-                        <div class="active">Подтема 1.1</div>
-                        <div>Подтема 1.2</div>
-                        <div>Подтема 2.1</div>
-                    </div>
-                    <div class="div-table-cell content-cell" rowspan="3">Некий текст, привязанный к Подтеме 2.2</div>
+                    <div id="themes" class="div-table-cell theme-cell"></div>
+                    <div id="subthemes" class="div-table-cell subtheme-cell"></div>
+                    <div id="subtheme-text" class="div-table-cell content-cell"></div>
                 </div>
             </div>
         </div>

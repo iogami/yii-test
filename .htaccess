@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/web/
+RewriteRule ^ - [L]
+
+RewriteRule ^(.*)$ web/$1 [L]
+
+<FilesMatch "^(composer\.json|composer\.lock|\.env|yii|yii\.bat)$">
+    Require all denied
+</FilesMatch>
